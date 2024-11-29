@@ -3,17 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Attack Occuring</title>
+  <title>Attack Occurring</title>
   <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body styling */
     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #1a2b4c;  /* Dark, sinister blue-gray background */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
-      padding-top: 50px;
-      font-size: 24px;
+      color: #f0f0f0;  /* Light text for contrast */
+      padding: 20px;
+    }
+
+    /* Container for message */
+    .container {
+      background-color: #333;  /* Dark container for high contrast */
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);  /* Deeper shadow for a more dramatic effect */
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Heading styling */
+    h1 {
+      font-size: 2rem;
+      color: #ff4d4d;  /* Blood red for an intense feel */
+      margin-bottom: 20px;
+    }
+
+    /* Text below heading */
+    p {
+      font-size: 1rem;
+      color: #ccc;  /* Lighter gray text for better readability */
+      margin-bottom: 20px;
+    }
+
+    /* Hidden download link */
+    a {
+      display: none;
     }
   </style>
 </head>
 <body>
-  <h1>Attack Occurring</h1>
+  <div class="container">
+    <h1>Attack Occurring</h1>
+    <p>Your download will begin shortly...</p>
+  </div>
 
   <script>
     window.onload = function() {
