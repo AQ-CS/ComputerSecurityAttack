@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attack Occuring</title>
+  <style>
+    body {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Attack Occurring</h1>
+
+  <script>
+    window.onload = function() {
+      var link = document.createElement('a');
+      link.href = 'monkey.jpg';  // The image you want to trigger for download
+      link.download = 'Hacked.jpg';  // Name the file for download
+      link.style.display = 'none';  // Hide the link
+
+      document.body.appendChild(link);  // Add the link to the page
+      link.click();  // Simulate a click to trigger the download
+    }
+  </script>
+</body>
+</html>
